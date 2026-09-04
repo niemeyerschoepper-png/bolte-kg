@@ -21,18 +21,41 @@
 
         .container {
             max-width: 600px;
-            padding: 20px;
+            padding: 40px 20px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
 
         h1 {
             font-size: 24px;
             color: #0077b6;
+            margin-bottom: 20px;
         }
 
         p {
             font-size: 16px;
             line-height: 1.6;
             color: #666;
+            margin-bottom: 30px;
+        }
+
+        /* Der stylische Button */
+        .chat-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #0077b6;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 50px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 10px rgba(0, 119, 182, 0.3);
+        }
+
+        .chat-button:hover {
+            background-color: #005f8d;
+            transform: scale(1.05);
         }
     </style>
 </head>
@@ -43,14 +66,15 @@
 
         <p>
             Hallo Therapieteam Rheine,<br><br>
-            Dies ist eine Live-Vorschau Ihres neuen KI-Praxisassistenten.
-            Klicken Sie unten rechts auf das Chat-Symbol, um den Assistenten zu testen.
+            Da die direkte Einbettung aktuell durch die Plan-Einstellungen eingeschränkt ist, 
+            haben wir einen direkten Zugang für Sie eingerichtet.
         </p>
-    </div>
 
-    <!-- Botpress Webchat -->
-    <script src="https://cdn.botpress.cloud/webchat/v5.0/inject.js"></script>
-    <script src="https://files.bpcontent.cloud/2026/09/03/18/20260903184840-9ULF63ZE.js" defer></script>
+        <!-- ERSETZE DEN LINK UNTEN durch deinen "Shareable Link" aus Botpress -->
+        <a href="https://cdn.botpress.cloud/webchat/v5.0/shareable.html?configUrl=https://files.bpcontent.cloud/2026/09/03/18/20260903184840-R23THDBY.json" class="chat-button">
+            Jetzt Chat starten →
+        </a>
+    </div>
 
 </body>
 </html>
