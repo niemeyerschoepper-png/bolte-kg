@@ -17,7 +17,7 @@
             background: #fff;
         }
 
-        /* Vorschau-Hinweis */
+        /* Hinweis oben */
         .preview-bar {
             background: #f1f3f4;
             color: #666;
@@ -28,7 +28,7 @@
 
         /* Navigation */
         header {
-            height: 90px;
+            height: 78px;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -37,10 +37,19 @@
             background: #fff;
         }
 
-        .logo img {
-            width: 165px;
-            height: auto;
+        .logo {
+            font-size: 28px;
+            font-weight: 800;
+            color: #006eb8;
+            letter-spacing: -1px;
+        }
+
+        .logo span {
             display: block;
+            font-size: 9px;
+            color: #555;
+            letter-spacing: 0.5px;
+            margin-top: -3px;
         }
 
         nav {
@@ -182,10 +191,6 @@
                 padding: 0 5%;
             }
 
-            .logo img {
-                width: 140px;
-            }
-
             .hero {
                 padding: 50px 6%;
             }
@@ -196,10 +201,6 @@
 
             .services {
                 padding: 50px 6%;
-            }
-
-            .contact {
-                display: none;
             }
         }
     </style>
@@ -212,10 +213,9 @@
     </div>
 
     <header>
-
-        <!-- Echtes Bolte Logo -->
         <div class="logo">
-            <img src="logo.png" alt="Bolte Sanitär Heizung Klima">
+            Bolte
+            <span>Sanitär · Heizung · Klima</span>
         </div>
 
         <nav>
@@ -228,14 +228,10 @@
         <div class="contact">
             Kontakt
         </div>
-
     </header>
 
-
     <section class="hero">
-
         <div class="hero-content">
-
             <small>Bolte KG · Rheine</small>
 
             <h1>
@@ -252,11 +248,8 @@
             <a href="#" class="hero-button">
                 Mehr erfahren
             </a>
-
         </div>
-
     </section>
-
 
     <section class="services">
 
@@ -318,26 +311,16 @@
             </div>
 
         </div>
-
     </section>
 
-
     <footer>
-
         <strong>Bolte KG</strong>
-
-        <p>
-            Hauenhorster Straße 145 · 48431 Rheine
-        </p>
-
-        <p>
-            Sanitär · Heizung · Klima · Erneuerbare Energien
-        </p>
-
+        <p>Hauenhorster Straße 145 · 48431 Rheine</p>
+        <p>Sanitär · Heizung · Klima · Erneuerbare Energien</p>
     </footer>
 
 
-    <!-- BOTPRESS – FUNKTIONIERENDEN CODE NICHT VERÄNDERN -->
+    <!-- BOTpress – NICHT VERÄNDERN -->
     <script src="https://cdn.botpress.cloud/webchat/v5.0/inject.js"></script>
     <script src="https://files.bpcontent.cloud/2026/09/05/15/20260905155333-5XQWS5QC.js" defer></script>
 
