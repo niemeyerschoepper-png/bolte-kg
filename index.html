@@ -5,11 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bolte KG – Sanitär, Heizung & Klima</title>
 
-    <!-- Schrift -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
     <style>
         * {
             box-sizing: border-box;
@@ -17,7 +12,7 @@
 
         body {
             margin: 0;
-            font-family: 'Roboto Condensed', Arial, sans-serif;
+            font-family: Arial, sans-serif;
             color: #222;
             background: #fff;
         }
@@ -29,12 +24,11 @@
             text-align: center;
             padding: 9px 15px;
             font-size: 13px;
-            font-family: Arial, sans-serif;
         }
 
         /* Navigation */
         header {
-            height: 90px;
+            height: 78px;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -44,17 +38,25 @@
         }
 
         .logo {
-            display: flex;
-            align-items: center;
-            max-width: 170px;
+            font-size: 28px;
+            font-weight: 800;
+            color: #006eb8;
+            letter-spacing: -1px;
+        }
+
+        .logo span {
+            display: block;
+            font-size: 9px;
+            color: #555;
+            letter-spacing: 0.5px;
+            margin-top: -3px;
         }
 
         nav {
             display: flex;
             gap: 30px;
-            font-size: 16px;
-            font-weight: 600;
-            color: #064b9b;
+            font-size: 15px;
+            color: #333;
         }
 
         nav a {
@@ -63,12 +65,12 @@
         }
 
         .contact {
-            background: #064b9b;
+            background: #006eb8;
             color: white;
-            padding: 11px 22px;
-            border-radius: 3px;
-            font-weight: 600;
-            font-size: 16px;
+            padding: 12px 20px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 14px;
         }
 
         /* Hero */
@@ -85,40 +87,37 @@
         }
 
         .hero small {
-            color: #064b9b;
-            font-weight: 600;
-            font-size: 15px;
+            color: #006eb8;
+            font-weight: bold;
+            font-size: 14px;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
 
         .hero h1 {
-            font-size: clamp(42px, 5vw, 62px);
-            line-height: 1.02;
+            font-size: clamp(38px, 5vw, 58px);
+            line-height: 1.08;
             margin: 15px 0 20px;
-            color: #064b9b;
-            font-weight: 700;
+            color: #17364a;
         }
 
         .hero p {
-            font-size: 20px;
-            line-height: 1.55;
-            color: #555;
+            font-size: 19px;
+            line-height: 1.6;
+            color: #5c6870;
             max-width: 620px;
             margin: 0;
-            font-weight: 400;
         }
 
         .hero-button {
             display: inline-block;
             margin-top: 30px;
-            background: #064b9b;
+            background: #006eb8;
             color: white;
-            padding: 13px 25px;
-            border-radius: 3px;
+            padding: 14px 24px;
+            border-radius: 4px;
             text-decoration: none;
-            font-weight: 600;
-            font-size: 17px;
+            font-weight: bold;
         }
 
         /* Leistungen */
@@ -128,18 +127,16 @@
         }
 
         .services h2 {
-            color: #064b9b;
-            font-size: 38px;
+            color: #17364a;
+            font-size: 32px;
             margin: 0 0 12px;
-            font-weight: 700;
         }
 
         .services-intro {
-            color: #666;
+            color: #6b7378;
             margin: 0 auto 40px;
             max-width: 650px;
             line-height: 1.6;
-            font-size: 18px;
         }
 
         .service-grid {
@@ -154,66 +151,48 @@
             border: 1px solid #e5e8ea;
             padding: 30px 25px;
             text-align: left;
-            border-radius: 4px;
+            border-radius: 6px;
             background: #fff;
         }
 
         .service h3 {
-            color: #064b9b;
+            color: #17364a;
             margin: 0 0 10px;
-            font-size: 23px;
-            font-weight: 600;
+            font-size: 20px;
         }
 
         .service p {
-            color: #666;
+            color: #69747b;
             line-height: 1.5;
             margin: 0;
-            font-size: 17px;
         }
 
         /* Footer */
         footer {
-            background: #064b9b;
+            background: #17364a;
             color: white;
             padding: 35px 8%;
             margin-top: 20px;
         }
 
-        footer strong {
-            font-size: 20px;
-            font-weight: 600;
-        }
-
         footer p {
             margin: 5px 0;
-            color: #e5edf7;
-            font-size: 15px;
+            color: #d5dde2;
+            font-size: 14px;
         }
 
         /* Mobile */
         @media (max-width: 800px) {
-
             nav {
                 display: none;
             }
 
             header {
-                height: 80px;
                 padding: 0 5%;
-            }
-
-            .contact {
-                font-size: 14px;
-                padding: 10px 16px;
             }
 
             .hero {
                 padding: 50px 6%;
-            }
-
-            .hero h1 {
-                font-size: 42px;
             }
 
             .service-grid {
@@ -234,10 +213,9 @@
     </div>
 
     <header>
-
-        <!-- Bolte Logo -->
         <div class="logo">
-            <img src="logo.png" alt="Bolte Logo" style="max-width: 100%; height: auto;">
+            Bolte
+            <span>Sanitär · Heizung · Klima</span>
         </div>
 
         <nav>
@@ -250,14 +228,10 @@
         <div class="contact">
             Kontakt
         </div>
-
     </header>
 
-
     <section class="hero">
-
         <div class="hero-content">
-
             <small>Bolte KG · Rheine</small>
 
             <h1>
@@ -274,11 +248,8 @@
             <a href="#" class="hero-button">
                 Mehr erfahren
             </a>
-
         </div>
-
     </section>
-
 
     <section class="services">
 
@@ -340,26 +311,16 @@
             </div>
 
         </div>
-
     </section>
 
-
     <footer>
-
         <strong>Bolte KG</strong>
-
-        <p>
-            Hauenhorster Straße 145 · 48431 Rheine
-        </p>
-
-        <p>
-            Sanitär · Heizung · Klima · Erneuerbare Energien
-        </p>
-
+        <p>Hauenhorster Straße 145 · 48431 Rheine</p>
+        <p>Sanitär · Heizung · Klima · Erneuerbare Energien</p>
     </footer>
 
 
-    <!-- BOTPRESS – NICHT VERÄNDERN -->
+    <!-- BOTpress – NICHT VERÄNDERN -->
     <script src="https://cdn.botpress.cloud/webchat/v5.0/inject.js"></script>
     <script src="https://files.bpcontent.cloud/2026/09/05/15/20260905155333-5XQWS5QC.js" defer></script>
 
